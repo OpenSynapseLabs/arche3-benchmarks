@@ -1,4 +1,4 @@
-# ARCHE3 Benchmarks
+## ARCHE3 Benchmarks
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18738608.svg)](https://doi.org/10.5281/zenodo.18738608)
 
@@ -75,13 +75,27 @@ Foundation Curriculum Training across 14 domains. Hardware: CUDA, BF16.
 
 > Full results across all 14 domains available in `results/benchmark_summary.json`
 
+### Expert Activation
+
+ARCHE3-7B uses a **SmartRouter** — a proprietary routing system designed to prevent routing collapse, a common failure mode in MoE architectures where only a few experts receive all tokens while the rest go unused.
+
+The SmartRouter combines four mechanisms:
+- **Load Balance Loss** — penalizes uneven expert utilization
+- **Entropy Bonus** — penalizes overly peaked routing distributions
+- **Jitter Noise** — breaks degenerate routing paths during training
+- **Adaptive Temperature** — learnable softmax temperature to prevent winner-takes-all
+
+As a result, across 3 training epochs over 14 FCT domains, a high fraction of the 20,480 experts were activated — demonstrating effective routing diversity with no collapse.
+
+> **Note:** The plots in this repository reflect an earlier version of the training scripts. The AIS benchmark (`ais_benchmark/arche3_ais_benchmark.ipynb`) was run on the updated scripts with SmartRouter, where expert activation and training dynamics were significantly improved.
+
 ### Hardware Requirements
 
 | Metric | Value |
 |--------|-------|
 | Peak RAM | ~5 GB |
 | Peak VRAM | ~5 GB |
-| Unique experts activated | 94 / 20,480 |
+| Total experts | 20,480 |
 | Training device | CUDA, BF16 |
 
 A ~7B parameter model with 20,480 experts running on consumer hardware — no datacenter required.
