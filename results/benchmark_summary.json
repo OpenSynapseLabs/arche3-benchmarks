@@ -1,0 +1,125 @@
+{
+  "device": "cuda",
+  "use_bf16": true,
+  "seq_len": 256,
+  "lr_foundation": 0.0001,
+  "early_stop": 0.6,
+  "epochs": 2,
+  "peak_ram_mb": 2487.7,
+  "peak_vram_mb": 2799.6,
+  "unique_experts_activated": 94,
+  "domain_results": {
+    "systems": {
+      "loss_start": 9.7124,
+      "loss_end": 9.7788,
+      "reduction_pct": -0.7,
+      "steps": 360,
+      "time_s": 94.7,
+      "early_stop": false
+    },
+    "mathematics": {
+      "loss_start": 9.9338,
+      "loss_end": 9.802,
+      "reduction_pct": 1.3,
+      "steps": 360,
+      "time_s": 94.8,
+      "early_stop": false
+    },
+    "physics": {
+      "loss_start": 9.7058,
+      "loss_end": 9.8234,
+      "reduction_pct": -1.2,
+      "steps": 362,
+      "time_s": 95.6,
+      "early_stop": false
+    },
+    "biology": {
+      "loss_start": 9.7585,
+      "loss_end": 9.8447,
+      "reduction_pct": -0.9,
+      "steps": 360,
+      "time_s": 95.3,
+      "early_stop": false
+    },
+    "information": {
+      "loss_start": 10.0054,
+      "loss_end": 9.7897,
+      "reduction_pct": 2.2,
+      "steps": 362,
+      "time_s": 95.4,
+      "early_stop": false
+    },
+    "cognition": {
+      "loss_start": 10.2581,
+      "loss_end": 9.8632,
+      "reduction_pct": 3.8,
+      "steps": 362,
+      "time_s": 96.0,
+      "early_stop": false
+    },
+    "energy": {
+      "loss_start": 10.2612,
+      "loss_end": 9.9391,
+      "reduction_pct": 3.1,
+      "steps": 160,
+      "time_s": 42.1,
+      "early_stop": false
+    },
+    "scale": {
+      "loss_start": 10.083,
+      "loss_end": 9.8315,
+      "reduction_pct": 2.5,
+      "steps": 160,
+      "time_s": 42.3,
+      "early_stop": false
+    },
+    "complexity": {
+      "loss_start": 10.0535,
+      "loss_end": 9.8322,
+      "reduction_pct": 2.2,
+      "steps": 240,
+      "time_s": 63.4,
+      "early_stop": false
+    },
+    "time": {
+      "loss_start": 9.5776,
+      "loss_end": 9.8367,
+      "reduction_pct": -2.7,
+      "steps": 240,
+      "time_s": 63.4,
+      "early_stop": false
+    },
+    "economics": {
+      "loss_start": 9.9121,
+      "loss_end": 9.9363,
+      "reduction_pct": -0.2,
+      "steps": 360,
+      "time_s": 95.2,
+      "early_stop": false
+    },
+    "social": {
+      "loss_start": 10.1101,
+      "loss_end": 9.8542,
+      "reduction_pct": 2.5,
+      "steps": 362,
+      "time_s": 95.6,
+      "early_stop": false
+    },
+    "language": {
+      "loss_start": 9.9758,
+      "loss_end": 9.8533,
+      "reduction_pct": 1.2,
+      "steps": 360,
+      "time_s": 94.9,
+      "early_stop": false
+    },
+    "philosophy": {
+      "loss_start": 10.0605,
+      "loss_end": 9.8902,
+      "reduction_pct": 1.7,
+      "steps": 354,
+      "time_s": 93.8,
+      "early_stop": false
+    }
+  }
+}

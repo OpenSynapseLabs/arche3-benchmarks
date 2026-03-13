@@ -1,0 +1,171 @@
+{
+  "model": "ARCHE3-7B",
+  "version": "v4",
+  "device": "cuda",
+  "use_bf16": true,
+  "fct": {
+    "epochs_per_domain": 3,
+    "early_stop": 0.35,
+    "results": {
+      "systems": {
+        "loss_start": 10.2755,
+        "loss_end": 3.8708,
+        "reduction_pct": 62.3,
+        "steps": 540,
+        "expert_updates": 65463,
+        "time_s": 405.0,
+        "early_stop": false
+      },
+      "mathematics": {
+        "loss_start": 10.2679,
+        "loss_end": 3.6545,
+        "reduction_pct": 64.4,
+        "steps": 540,
+        "expert_updates": 65586,
+        "time_s": 412.6,
+        "early_stop": false
+      }
+    }
+  },
+  "agi_score": {
+    "total": 50,
+    "band": "\ud83d\udfe7 Strong LLM",
+    "L1": 15,
+    "L2": 10,
+    "L3": 5,
+    "L4": 10,
+    "L5": 10,
+    "details": {
+      "L1": [
+        {
+          "test": "Medicine: herd immunity",
+          "correct": true,
+          "diff": 0.071,
+          "pts": 5
+        },
+        {
+          "test": "Engineering: bridge overload",
+          "correct": true,
+          "diff": 0.4473,
+          "pts": 5
+        },
+        {
+          "test": "Ecology: deforestation",
+          "correct": false,
+          "diff": -0.5186,
+          "pts": 0
+        },
+        {
+          "test": "Sociology: information bubble",
+          "correct": true,
+          "diff": 0.0366,
+          "pts": 5
+        }
+      ],
+      "L2": [
+        {
+          "test": "Physics: wave interference",
+          "correct": false,
+          "diff": -1.2626,
+          "pts": 0
+        },
+        {
+          "test": "Economics: price vs demand",
+          "correct": false,
+          "diff": -0.7267,
+          "pts": 0
+        },
+        {
+          "test": "Biology: antibiotic course",
+          "correct": true,
+          "diff": 0.8227,
+          "pts": 5
+        },
+        {
+          "test": "Computer science: sort complexity",
+          "correct": true,
+          "diff": 0.3421,
+          "pts": 5
+        }
+      ],
+      "L3": [
+        {
+          "test": "Climate \u2192 Agriculture \u2192 Migration",
+          "correct": false,
+          "diff": -1.1584,
+          "pts": 0
+        },
+        {
+          "test": "Credit \u2192 Money supply \u2192 Inflation",
+          "correct": false,
+          "diff": -0.5661,
+          "pts": 0
+        },
+        {
+          "test": "Automation \u2192 Unemployment \u2192 Consumption",
+          "correct": true,
+          "diff": 1.1011,
+          "pts": 5
+        },
+        {
+          "test": "Antibiotics \u2192 Resistance \u2192 Healthcare",
+          "correct": false,
+          "diff": -0.5773,
+          "pts": 0
+        }
+      ],
+      "L4": [
+        {
+          "test": "Physics\u2192Economics: resonance = bubble",
+          "correct": true,
+          "diff": 2.2968,
+          "pts": 5
+        },
+        {
+          "test": "Biology\u2192Sociology: immune system = norms",
+          "correct": false,
+          "diff": -0.6252,
+          "pts": 0
+        },
+        {
+          "test": "Thermodynamics\u2192Information: entropy",
+          "correct": false,
+          "diff": -0.5832,
+          "pts": 0
+        },
+        {
+          "test": "Evolution\u2192Technology: natural selection",
+          "correct": true,
+          "diff": 0.8154,
+          "pts": 5
+        }
+      ],
+      "L5": [
+        {
+          "test": "Wrong UPDATE: CO2 cools the planet",
+          "correct": true,
+          "diff": 2.4536,
+          "pts": 5
+        },
+        {
+          "test": "Wrong UPDATE: monopoly lowers prices",
+          "correct": false,
+          "diff": -0.6512,
+          "pts": 0
+        },
+        {
+          "test": "Wrong UPDATE: more nodes = slower network",
+          "correct": true,
+          "diff": 0.8634,
+          "pts": 5
+        },
+        {
+          "test": "Wrong UPDATE: vaccines cause disease",
+          "correct": false,
+          "diff": -1.7224,
+          "pts": 0
+        }
+      ]
+    }
+  }
+}
