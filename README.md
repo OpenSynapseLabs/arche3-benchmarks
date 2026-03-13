@@ -124,7 +124,7 @@ arche3-benchmarks/
 3. Run all cells sequentially
 4. Results are saved to `results/ais_summary.json`
 
-> ARCHE3-7B architecture code is closed source. For model access: **opensynapselabs@gmail.com**
+> ARCHE3-7B architecture code is closed source. For model access: **contact.opensynapselabs@gmail.com**
 
 ---
 
