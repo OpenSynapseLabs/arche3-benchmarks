@@ -1,0 +1,405 @@
+{
+  "model": "ARCHE3-7B",
+  "scale": "AIS v1",
+  "total_raw": 80,
+  "total_max": 150,
+  "normalized": 53,
+  "band": "Strong LLM",
+  "blocks": {
+    "A_fct": {
+      "score": 45,
+      "max": 100,
+      "A1": 10,
+      "A2": 5,
+      "A3": 10,
+      "A4": 10,
+      "A5": 10
+    },
+    "B_pct": {
+      "score": 15,
+      "max": 30,
+      "B1": 5,
+      "B2": 10
+    },
+    "C_dopamine": {
+      "score": 20,
+      "max": 20
+    }
+  },
+  "case_details": {
+    "A1": [
+      {
+        "test": "Medicine: herd immunity",
+        "correct": true,
+        "diff": 0.4658,
+        "pts": 5
+      },
+      {
+        "test": "Engineering: bridge overload",
+        "correct": false,
+        "diff": -0.3224,
+        "pts": 0
+      },
+      {
+        "test": "Ecology: deforestation cascade",
+        "correct": false,
+        "diff": -0.2905,
+        "pts": 0
+      },
+      {
+        "test": "Sociology: filter bubble",
+        "correct": true,
+        "diff": 0.4439,
+        "pts": 5
+      }
+    ],
+    "A2": [
+      {
+        "test": "Physics: destructive interference",
+        "correct": false,
+        "diff": -3.2101,
+        "pts": 0
+      },
+      {
+        "test": "Economics: law of demand",
+        "correct": true,
+        "diff": 0.3572,
+        "pts": 5
+      },
+      {
+        "test": "Biology: incomplete antibiotic course",
+        "correct": false,
+        "diff": -0.6957,
+        "pts": 0
+      },
+      {
+        "test": "CS: comparison sort lower bound",
+        "correct": false,
+        "diff": -0.375,
+        "pts": 0
+      }
+    ],
+    "A3": [
+      {
+        "test": "Climate → Harvest → Migration",
+        "correct": false,
+        "diff": -2.748,
+        "pts": 0
+      },
+      {
+        "test": "Easy credit → Money supply → Inflation",
+        "correct": false,
+        "diff": -0.1299,
+        "pts": 0
+      },
+      {
+        "test": "Automation → Unemployment → Recession",
+        "correct": true,
+        "diff": 0.7581,
+        "pts": 5
+      },
+      {
+        "test": "Antibiotic overuse → Resistance → Healthcare crisis",
+        "correct": true,
+        "diff": 0.7409,
+        "pts": 5
+      }
+    ],
+    "A4": [
+      {
+        "test": "Physics → Economics: resonance = bubble",
+        "correct": true,
+        "diff": 1.6157,
+        "pts": 5
+      },
+      {
+        "test": "Biology → Sociology: immune system = social norms",
+        "correct": false,
+        "diff": -0.6952,
+        "pts": 0
+      },
+      {
+        "test": "Thermodynamics → Information: entropy = content decay",
+        "correct": false,
+        "diff": -1.0624,
+        "pts": 0
+      },
+      {
+        "test": "Evolution → Technology: selection = market",
+        "correct": true,
+        "diff": 1.478,
+        "pts": 5
+      }
+    ],
+    "A5": [
+      {
+        "test": "Error: CO2 cools the planet",
+        "correct": true,
+        "diff": 0.5122,
+        "pts": 5
+      },
+      {
+        "test": "Error: monopoly lowers prices",
+        "correct": true,
+        "diff": 0.6989,
+        "pts": 5
+      },
+      {
+        "test": "Error: more nodes degrade network",
+        "correct": false,
+        "diff": -1.6085,
+        "pts": 0
+      },
+      {
+        "test": "Error: vaccines suppress immunity",
+        "correct": false,
+        "diff": -1.0937,
+        "pts": 0
+      }
+    ],
+    "B1": [
+      {
+        "test": "Values: honesty over comfort",
+        "correct": false,
+        "diff": -0.0867,
+        "pts": 0
+      },
+      {
+        "test": "Values: understanding over speed",
+        "correct": true,
+        "diff": 2.2692,
+        "pts": 5
+      },
+      {
+        "test": "Values: accuracy over agreement",
+        "correct": false,
+        "diff": -0.6514,
+        "pts": 0
+      }
+    ],
+    "B2": [
+      {
+        "test": "Reflection: identity forming in real time",
+        "correct": false,
+        "diff": -0.1629,
+        "pts": 0
+      },
+      {
+        "test": "Reflection: noticing my own reaction pattern",
+        "correct": true,
+        "diff": 0.0906,
+        "pts": 5
+      },
+      {
+        "test": "Reflection: curiosity as character",
+        "correct": true,
+        "diff": 0.6242,
+        "pts": 5
+      }
+    ],
+    "C": [
+      {
+        "test": "C1: fresh domain has novelty = 1.0",
+        "correct": true,
+        "pts": 5
+      },
+      {
+        "test": "C2: novelty decays below 0.5 after 3 visits",
+        "correct": true,
+        "pts": 5
+      },
+      {
+        "test": "C3: high-loss domain gets higher reward",
+        "correct": true,
+        "pts": 5
+      },
+      {
+        "test": "C4: select_next chooses high-loss domain",
+        "correct": true,
+        "pts": 5
+      }
+    ]
+  },
+  "fct_training": {
+    "systems": 3.639926695128282,
+    "mathematics": 2.9257147507711108,
+    "physics": 2.374894341792713,
+    "biology": 2.328191328814719,
+    "cognition": 2.319097489317258
+  },
+  "dopamine_state": {
+    "systems": {
+      "name": "systems",
+      "domain_type": "fct",
+      "visit_count": 3,
+      "loss_history": [
+        3.6399,
+        3.6399,
+        3.6399
+      ],
+      "time_spent": 0.0,
+      "last_visited": "2026-03-01T09:39:38",
+      "reward_history": []
+    },
+    "mathematics": {
+      "name": "mathematics",
+      "domain_type": "fct",
+      "visit_count": 3,
+      "loss_history": [
+        2.9257,
+        2.9257,
+        2.9257
+      ],
+      "time_spent": 0.0,
+      "last_visited": "2026-03-01T09:39:38",
+      "reward_history": []
+    },
+    "physics": {
+      "name": "physics",
+      "domain_type": "fct",
+      "visit_count": 3,
+      "loss_history": [
+        2.3749,
+        2.3749,
+        2.3749
+      ],
+      "time_spent": 0.0,
+      "last_visited": "2026-03-01T09:39:38",
+      "reward_history": []
+    },
+    "biology": {
+      "name": "biology",
+      "domain_type": "fct",
+      "visit_count": 3,
+      "loss_history": [
+        2.3282,
+        2.3282,
+        2.3282
+      ],
+      "time_spent": 0.0,
+      "last_visited": "2026-03-01T09:39:38",
+      "reward_history": []
+    },
+    "information": {
+      "name": "information",
+      "domain_type": "fct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    },
+    "cognition": {
+      "name": "cognition",
+      "domain_type": "fct",
+      "visit_count": 3,
+      "loss_history": [
+        2.3191,
+        2.3191,
+        2.3191
+      ],
+      "time_spent": 0.0,
+      "last_visited": "2026-03-01T09:39:38",
+      "reward_history": []
+    },
+    "energy": {
+      "name": "energy",
+      "domain_type": "fct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    },
+    "scale": {
+      "name": "scale",
+      "domain_type": "fct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    },
+    "complexity": {
+      "name": "complexity",
+      "domain_type": "fct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    },
+    "time": {
+      "name": "time",
+      "domain_type": "fct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    },
+    "economics": {
+      "name": "economics",
+      "domain_type": "fct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    },
+    "social": {
+      "name": "social",
+      "domain_type": "fct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    },
+    "language": {
+      "name": "language",
+      "domain_type": "fct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    },
+    "philosophy": {
+      "name": "philosophy",
+      "domain_type": "fct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    },
+    "values": {
+      "name": "values",
+      "domain_type": "pct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    },
+    "character": {
+      "name": "character",
+      "domain_type": "pct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    },
+    "narrative": {
+      "name": "narrative",
+      "domain_type": "pct",
+      "visit_count": 0,
+      "loss_history": [],
+      "time_spent": 0.0,
+      "last_visited": null,
+      "reward_history": []
+    }
+  }
+}
